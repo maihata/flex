@@ -1,22 +1,67 @@
 ---
-title: "Maiko's Blog"
+title: "Maiko's Dashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
+    theme:
+      version: 4
+      bootswatch: minty
+    orientation: columns
     vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(rio)
+library(knitr)
+library(gt)
+library(DT)
+library(reactable)
+library(gtsummary)
+library(kableExtra)
+library(tinytex)
+library(janitor)
+library(tidylog)
+library(sjPlot)
+library(lme4)
+library(tibble)
+library(dplyr)
+library(epitools)
+library(readxl)
+library(pwr)
+library(rcompanion)
+library(grateful)
+library(distill)
+library(readxl)
+library(scales)
+library(tidyr)
+library(patchwork)
+library(corrplot)
+library(distill)
+library(tibble)
+library(rcartocolor)
+library(ggplot2)
+library(ggforce)
+library(ggrepel)
+library(gghighlight)
+library(quarto)
+library(epitools)
+library(plotly)
+library(gapminder)
 library(flexdashboard)
 library(usethis)
 ```
 
-```{r}
+```{r include=FALSE}
+# read cvs etc. 
 ```
 
+Project background: {.sidebar}
+===============
+This is a project _________. The datasets are downloaded from the Office of Special Education  [OSEP](https://data.ed.gov/dataset/idea-section-618-data-products-static-tables-part-c)
 
-```{r}
-```
+# Maiko's data visualizations 
+
 
 
 Column {data-width=650}
@@ -24,18 +69,18 @@ Column {data-width=650}
 ### Final Visualization 
 
 ```{r}
-library(gapminder)
-library(ggplot2)
 
-p1 <- ggplot(gapminder, aes(year, gdpPercap)) +
-geom_line(aes(group = country),
-color = "gray70") +
-scale_y_log10(labels = scales::dollar) +
-  labs(title = "GDP") 
 ```
 
-Column {data-width=350}
+```{r}
+# read.csv and such 
+```
+
+{.sidebar}
+
+Column {data-width=650}
 -----------------------------------------------------------------------
+
 ### Second Attempt 
 
 ```{r}
