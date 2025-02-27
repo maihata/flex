@@ -1,5 +1,5 @@
 ---
-title: "Maiko's Dashboard"
+title: "Maiko's Blog"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -10,6 +10,14 @@ output:
 library(flexdashboard)
 library(usethis)
 ```
+
+```{r}
+```
+
+
+```{r}
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
